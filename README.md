@@ -65,9 +65,9 @@ The completed export result might look like:
   },
   "resourceType": "DocumentReference",
   "description": "Demographic information not included in Patient resource, described at http://vendor.com/docs/cures-ehi-demographics.html",
-  "type": {
-    "coding": [{"system": "http://vendor.com/", "code": "demo-1", "display": "Demographics table export"}]
-  },
+  "category": [{
+    "coding": [{"system": "http://ehr.example.org/docs/ehi/v2.0.1", "code": "demo-table", "display": "Demographics table export"}]
+  }],
   "content": [{
     "attachment": {"url": "http://server.example.org/patient_file_1.csv", "contentType": "text/csv"}
   }],
